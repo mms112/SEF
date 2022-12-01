@@ -1,6 +1,3 @@
-Content/Animations
-Content/Scenarios
-Content/Textures
 System/*.u
 System/Packages.md5
 System/Packages.txt
@@ -24,9 +21,7 @@ System/chatlog_*.txt
 *.dds
 *.psd
 *.s4m
-*.ukx
 *.mopp
-*.uax
 *.wav
 *.ogg
 *.usx

@@ -147,23 +147,23 @@ simulated function OnProtectedRegionHit() {
 	log("[SHREDDING] Armor "$self$" now has "$CurrentMomentumToPenetrate$" MtP");
 
 	// Tell the client to update their display in multiplayer
-	if(Level.NetMode != NM_Standalone)
+	//if(Level.NetMode != NM_Standalone)
+	//{
+	OwnerPawn = Pawn(Owner);
+	if(OwnerPawn == None)
 	{
-		OwnerPawn = Pawn(Owner);
-		if(OwnerPawn == None)
-		{
-			return;
-		}
-
-		OwnerController = PlayerController(OwnerPawn.Controller);
-		if(OwnerController == None)
-		{
-			return;
-		}
-
-		log("Calling ClientNotifyArmorTakeDamage");
-		OwnerController.ClientNotifyArmorTakeDamage(CurrentMomentumToPenetrate);
+		return;
 	}
+
+	OwnerController = PlayerController(OwnerPawn.Controller);
+	if(OwnerController == None)
+	{
+		return;
+	}
+
+	log("Calling ClientNotifyArmorTakeDamage");
+	OwnerController.ClientNotifyArmorTakeDamage(CurrentMomentumToPenetrate);
+	//}
 }
 
 function ClientNotifiedOfHit(float NewMTP)

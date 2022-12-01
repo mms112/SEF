@@ -705,7 +705,7 @@ TotalAmmoString=25 grenades
 RateOfFire=6 RPM
 
 [ColtAccurizedRifle]
-Description=The Colt Accurized Rifle occupies the mid ground between an assault rifle and a dedicated sniper rifle. The CAR combines accurate fire at range with the large ammo capacity required for urban field use, plus mounting points for a variety of scopes. Firing a 5.56mm round from a 20 round magazine, the CAR is only capable of firing in semiautomatic mode. Its length can make it a difficult weapon to wield in close quarters.
+Description=The Colt Accurized Rifle occupies the mid ground between an assault rifle and a dedicated sniper rifle. The CAR combines accurate fire at range with the large ammo capacity required for urban field use, plus mounting points for a variety of scopes. Firing a 5.56mm round from a 20 round magazine, the CAR is only capable of firing in semiautomatic mode. Its length can make it a difficult weapon to wield in close quarters.||This particular variant is equipped with an integrated suppressor for when stealth is paramount.
 FriendlyName=Accurized CR6720
 ShortName=CR6720
 Manufacturer=Colt
